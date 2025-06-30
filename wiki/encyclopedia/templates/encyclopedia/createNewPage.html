@@ -1,0 +1,19 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Create New Page
+{% endblock %}
+
+{% block body %}
+    <h1>Creating a New Wikipedia Page!</h1>
+    <form action = "{% url 'createNewPage' %}" method = "post">
+        {% csrf_token%}
+        <div class="title-div">
+            <p>Title</p>
+            <input type="text" name="title">
+        </div>
+        <p><label  for="contentBlock">Content</label></p>
+        <textarea class="content"id="contentBlock" name="content"></textarea>
+        <button type="submit">Save your page</button>
+    </form>
+{% endblock %}
