@@ -16,3 +16,5 @@ Framework web em Python, segue o padrão Model-Template-View (MTV), oferece func
 - **Model**: define estrutura e regras de dados  
 - **Template**: camada de apresentação (HTML)  
 - **View**: lógica que liga Model ↔ Template
+
+O projeto WIKI é um projeto feito por mim seguindo o CS50 Web, enquanto estudava Django.
